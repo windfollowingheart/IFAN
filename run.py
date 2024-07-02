@@ -251,7 +251,7 @@ if __name__ == '__main__':
         config.dist = args.dist
         config.cuda = not args.cpu
         if config.cuda == True:
-            config.device = 'cuda'
+            config.device = 'cuda:0'
         else:
             config.device = 'cpu'
         config.is_verbose = args.is_verbose
@@ -338,7 +338,7 @@ if __name__ == '__main__':
         config.dist = args.dist
         config.cuda = not args.cpu
         if config.cuda == True:
-            config.device = 'cuda'
+            config.device = 'cuda:0'
         else:
             config.device = 'cpu'
 
