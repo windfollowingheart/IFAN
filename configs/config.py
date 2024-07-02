@@ -21,7 +21,7 @@ def get_config(project = '', mode = '', config_ = ''):
 
     config.cuda = True
     if config.cuda == True:
-        config.device = 'cuda'
+        config.device = 'cuda:0'
     else:
         config.device = 'cpu'
     config.dist = False
